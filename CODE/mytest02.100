@@ -1,0 +1,19 @@
+/* Tests the ability to nest try's */
+int main ()
+{
+  try
+  {
+    try
+    {
+      int x;
+      x = 1;
+      throw x;
+    } catch ex : {
+      ex = ex + 1;
+      throw ex;
+    }
+  } catch ex : {
+    putint(ex);
+  }
+  return 0;
+}

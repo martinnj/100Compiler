@@ -1,0 +1,21 @@
+/* This test will show the compilers inability
+ * to throw exceptiosn across function calls :-(
+ * Instead of printing the integer, it goes to unhandled.
+ */
+int main()
+{
+  int y;
+  y = getint();
+  try
+    y = inc(y);
+  catch ex :
+    putint(ex);
+  return y;
+}
+
+int inc(int x)
+{
+  x = x+1;
+  if (200 < x) throw 42;
+  else return x + 1;
+}

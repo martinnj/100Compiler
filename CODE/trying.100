@@ -1,0 +1,17 @@
+int main()
+{
+  try
+  {
+    int x;
+    x = 1;
+    throw 123;
+  }
+  catch ex:
+  {
+    ex = ex + 2;
+    putint(ex);
+  }
+
+  return 0;
+}
+

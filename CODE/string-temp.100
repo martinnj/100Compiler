@@ -1,0 +1,9 @@
+/* ssort.100 -- bubble sort of characters in string */
+/* reads a string */
+/* then prints the string with sorted characters */
+
+int main()
+{
+  putstring("lol");
+  return 0;
+}

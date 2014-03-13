@@ -1,0 +1,9 @@
+/* asks for a number, if it is 0 it throws
+   an uncaught exception: 0. Else it returns 1 */
+int main()
+{
+  int x;
+  x = getint();
+  if (x == 0) throw 0;
+  else return 1;
+}
